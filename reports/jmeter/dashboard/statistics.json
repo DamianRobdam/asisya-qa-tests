@@ -1,0 +1,50 @@
+{
+  "POST solicitud-asistencia (setup)" : {
+    "transaction" : "POST solicitud-asistencia (setup)",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 27.0,
+    "medianResTime" : 27.0,
+    "minResTime" : 27.0,
+    "maxResTime" : 27.0,
+    "pct1ResTime" : 27.0,
+    "pct2ResTime" : 27.0,
+    "pct3ResTime" : 27.0,
+    "throughput" : 37.03703703703704,
+    "receivedKBytesPerSec" : 28.28414351851852,
+    "sentKBytesPerSec" : 10.886863425925926
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 320,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2.96875,
+    "medianResTime" : 3.0,
+    "minResTime" : 1.0,
+    "maxResTime" : 27.0,
+    "pct1ResTime" : 4.0,
+    "pct2ResTime" : 4.0,
+    "pct3ResTime" : 6.0,
+    "throughput" : 10.530819100273142,
+    "receivedKBytesPerSec" : 10.11264582716293,
+    "sentKBytesPerSec" : 1.8652610491328527
+  },
+  "GET /api/asisya/seguimiento" : {
+    "transaction" : "GET /api/asisya/seguimiento",
+    "sampleCount" : 319,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2.8934169278996857,
+    "medianResTime" : 3.0,
+    "minResTime" : 1.0,
+    "maxResTime" : 6.0,
+    "pct1ResTime" : 4.0,
+    "pct2ResTime" : 4.0,
+    "pct3ResTime" : 5.800000000000011,
+    "throughput" : 10.65962708013099,
+    "receivedKBytesPerSec" : 10.24290907154314,
+    "sentKBytesPerSec" : 1.8841723647497162
+  }
+}

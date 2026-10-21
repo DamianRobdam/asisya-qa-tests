@@ -1,0 +1,25 @@
+Running 1 test using 1 worker
+[1A[2K[1/1] [debug-seccion-c] › tests/debug/test-asistencia-falla.spec.ts:17:5 › Solicitud de asistencia médica - flujo completo
+[1A[2K  1) [debug-seccion-c] › tests/debug/test-asistencia-falla.spec.ts:17:5 › Solicitud de asistencia médica - flujo completo 
+    TimeoutError: page.click: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('text="Solicitar asistencia"')
+      24 |   await page.click('button[type="submit"]');
+      25 |
+    > 26 |   await page.click('text="Solicitar asistencia"');
+         |              ^
+      27 |   await page.click('text="Asistencia médica a domicilio"');
+      28 |
+      29 |   await page.locator('#direccion').fill('Calle 123 #45-67');
+        at /home/claude/asisya-qa-tests/tests/debug/test-asistencia-falla.spec.ts:26:14
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/test-asistencia-falla-Soli-3be09-cia-médica---flujo-completo-debug-seccion-c/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/test-asistencia-falla-Soli-3be09-cia-médica---flujo-completo-debug-seccion-c/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+    Error Context: test-results/test-asistencia-falla-Soli-3be09-cia-médica---flujo-completo-debug-seccion-c/error-context.md
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/test-asistencia-falla-Soli-3be09-cia-médica---flujo-completo-debug-seccion-c/trace.zip
+    Usage:
+        npx playwright show-trace test-results/test-asistencia-falla-Soli-3be09-cia-médica---flujo-completo-debug-seccion-c/trace.zip

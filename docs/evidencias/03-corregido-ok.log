@@ -1,0 +1,5 @@
+Running 3 tests using 3 workers
+  ✓  2 [debug-seccion-c] › tests/debug/test-asistencia-corregido.spec.ts:7:5 › Solicitud de asistencia médica - flujo completo (corregido) (4.0s)
+  ✓  1 [debug-seccion-c] › tests/debug/test-asistencia-corregido.spec.ts:7:5 › Solicitud de asistencia médica - flujo completo (corregido) (4.3s)
+  ✓  3 [debug-seccion-c] › tests/debug/test-asistencia-corregido.spec.ts:7:5 › Solicitud de asistencia médica - flujo completo (corregido) (3.8s)
+  3 passed (6.2s)

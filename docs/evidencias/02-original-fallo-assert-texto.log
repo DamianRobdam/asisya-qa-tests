@@ -1,0 +1,25 @@
+Running 1 test using 1 worker
+[1A[2K[1/1] [debug-seccion-c] › tests/debug/tmp-paso2.spec.ts:17:5 › Solicitud de asistencia médica - flujo completo
+[1A[2K  1) [debug-seccion-c] › tests/debug/tmp-paso2.spec.ts:17:5 › Solicitud de asistencia médica - flujo completo 
+    Error: expect(locator).toHaveText(expected) failed
+    Locator: locator('.resultado-confirmacion')
+    Expected: "Solicitud creada exitosamente"
+    Timeout: 8000ms
+    Error: element(s) not found
+    Call log:
+      - Expect "toHaveText" with timeout 8000ms
+      - waiting for locator('.resultado-confirmacion')
+        7 × locator resolved to <div role="status" data-testid="resultado" class="resultado-confirmacion ok">…</div>
+          - unexpected value "Solicitud creada exitosamente · Ticket ASY-4DF7FB Ver en Mi Asistencia"
+      31 |
+      32 |   const resultado = await page.locator('.resultado-confirmacion');
+    > 33 |   await expect(resultado).toHaveText('Solicitud creada exitosamente');
+         |                           ^
+      34 | });
+      35 |
+        at /home/claude/asisya-qa-tests/tests/debug/tmp-paso2.spec.ts:33:27
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/tmp-paso2-Solicitud-de-asistencia-médica---flujo-completo-debug-seccion-c/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/tmp-paso2-Solicitud-de-asistencia-médica---flujo-completo-debug-seccion-c/video.webm

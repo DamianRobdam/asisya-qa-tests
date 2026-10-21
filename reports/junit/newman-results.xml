@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Asisya API — Solicitud de asistencia" tests="16" time="0.105">
+  <testsuite name="01 · Casos positivos / POST solicitud-asistencia — payload del enunciado (200)" id="5b72e7f2-fdb3-49b5-ac7a-046332ea5ef3" timestamp="2026-10-21T16:36:00.249Z" tests="7" failures="0" errors="0" time="0.044">
+    <testcase name="[Global] Content-Type es JSON" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+    <testcase name="HTTP 200" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+    <testcase name="La respuesta cumple el esquema" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+    <testcase name="Los campos obligatorios se devuelven con los valores enviados" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+    <testcase name="Mensaje de confirmación correcto" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+    <testcase name="creadaEn es una fecha ISO válida" time="0.044" classname="01CasosPositivosPostSolicitudAsistenciaPayloadDelEnunciado200"/>
+  </testsuite>
+  <testsuite name="01 · Casos positivos / GET seguimiento — la solicitud creada existe (200)" id="ae50a3c0-3193-448c-8da2-87e2d29438a9" timestamp="2026-10-21T16:36:00.249Z" tests="5" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="01CasosPositivosGetSeguimientoLaSolicitudCreadaExiste200"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="01CasosPositivosGetSeguimientoLaSolicitudCreadaExiste200"/>
+    <testcase name="HTTP 200" time="0.004" classname="01CasosPositivosGetSeguimientoLaSolicitudCreadaExiste200"/>
+    <testcase name="Devuelve la misma solicitud creada" time="0.004" classname="01CasosPositivosGetSeguimientoLaSolicitudCreadaExiste200"/>
+    <testcase name="El estado pertenece al flujo definido" time="0.004" classname="01CasosPositivosGetSeguimientoLaSolicitudCreadaExiste200"/>
+  </testsuite>
+  <testsuite name="01 · Casos positivos / POST solicitud-asistencia — tipo grúa (200)" id="00f4bdbe-c2ad-4b55-b477-259f13ab6c39" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.005">
+    <testcase name="[Global] Content-Type es JSON" time="0.005" classname="01CasosPositivosPostSolicitudAsistenciaTipoGrua200"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.005" classname="01CasosPositivosPostSolicitudAsistenciaTipoGrua200"/>
+    <testcase name="HTTP 200" time="0.005" classname="01CasosPositivosPostSolicitudAsistenciaTipoGrua200"/>
+    <testcase name="tipoAsistencia = grua" time="0.005" classname="01CasosPositivosPostSolicitudAsistenciaTipoGrua200"/>
+  </testsuite>
+  <testsuite name="02 · Campos obligatorios (negativos) / POST sin 'usuarioId' (400)" id="e3ac34d0-65be-49e5-b0e8-d165d06027e6" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.002">
+    <testcase name="[Global] Content-Type es JSON" time="0.002" classname="02CamposObligatoriosNegativosPostSinUsuarioId400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.002" classname="02CamposObligatoriosNegativosPostSinUsuarioId400"/>
+    <testcase name="HTTP 400" time="0.002" classname="02CamposObligatoriosNegativosPostSinUsuarioId400"/>
+    <testcase name="Error de validación que menciona el campo usuarioId" time="0.002" classname="02CamposObligatoriosNegativosPostSinUsuarioId400"/>
+  </testsuite>
+  <testsuite name="02 · Campos obligatorios (negativos) / POST sin 'tipoAsistencia' (400)" id="fa2d9cd7-91db-488e-afb8-8babfcf0e41b" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.005">
+    <testcase name="[Global] Content-Type es JSON" time="0.005" classname="02CamposObligatoriosNegativosPostSinTipoAsistencia400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.005" classname="02CamposObligatoriosNegativosPostSinTipoAsistencia400"/>
+    <testcase name="HTTP 400" time="0.005" classname="02CamposObligatoriosNegativosPostSinTipoAsistencia400"/>
+    <testcase name="Error de validación que menciona el campo tipoAsistencia" time="0.005" classname="02CamposObligatoriosNegativosPostSinTipoAsistencia400"/>
+  </testsuite>
+  <testsuite name="02 · Campos obligatorios (negativos) / POST sin 'direccion' (400)" id="8799da9d-5c50-4fd6-be1f-7a43b8910daf" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="02CamposObligatoriosNegativosPostSinDireccion400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="02CamposObligatoriosNegativosPostSinDireccion400"/>
+    <testcase name="HTTP 400" time="0.004" classname="02CamposObligatoriosNegativosPostSinDireccion400"/>
+    <testcase name="Error de validación que menciona el campo direccion" time="0.004" classname="02CamposObligatoriosNegativosPostSinDireccion400"/>
+  </testsuite>
+  <testsuite name="02 · Campos obligatorios (negativos) / POST sin 'fecha' (400)" id="597c611f-6719-4788-9c91-6d5a464f3095" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="02CamposObligatoriosNegativosPostSinFecha400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="02CamposObligatoriosNegativosPostSinFecha400"/>
+    <testcase name="HTTP 400" time="0.004" classname="02CamposObligatoriosNegativosPostSinFecha400"/>
+    <testcase name="Error de validación que menciona el campo fecha" time="0.004" classname="02CamposObligatoriosNegativosPostSinFecha400"/>
+  </testsuite>
+  <testsuite name="02 · Campos obligatorios (negativos) / POST con 'direccion' vacía (400)" id="8f0e0596-df7b-4df6-b3eb-b1746a864cc0" timestamp="2026-10-21T16:36:00.249Z" tests="3" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="02CamposObligatoriosNegativosPostConDireccionVacia400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="02CamposObligatoriosNegativosPostConDireccionVacia400"/>
+    <testcase name="HTTP 400" time="0.004" classname="02CamposObligatoriosNegativosPostConDireccionVacia400"/>
+  </testsuite>
+  <testsuite name="03 · Formato y tipos (negativos) / POST tipoAsistencia no permitido (400)" id="fc47de92-7e5c-412d-bf9e-1d4d0747bec9" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.008">
+    <testcase name="[Global] Content-Type es JSON" time="0.008" classname="03FormatoYTiposNegativosPostTipoAsistenciaNoPermitido400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.008" classname="03FormatoYTiposNegativosPostTipoAsistenciaNoPermitido400"/>
+    <testcase name="HTTP 400" time="0.008" classname="03FormatoYTiposNegativosPostTipoAsistenciaNoPermitido400"/>
+    <testcase name="Indica los valores permitidos" time="0.008" classname="03FormatoYTiposNegativosPostTipoAsistenciaNoPermitido400"/>
+  </testsuite>
+  <testsuite name="03 · Formato y tipos (negativos) / POST fecha con formato inválido (400)" id="d51c2992-2acd-41c4-bec5-e26c3f245516" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.003">
+    <testcase name="[Global] Content-Type es JSON" time="0.003" classname="03FormatoYTiposNegativosPostFechaConFormatoInvalido400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.003" classname="03FormatoYTiposNegativosPostFechaConFormatoInvalido400"/>
+    <testcase name="HTTP 400" time="0.003" classname="03FormatoYTiposNegativosPostFechaConFormatoInvalido400"/>
+    <testcase name="Mensaje de formato YYYY-MM-DD" time="0.003" classname="03FormatoYTiposNegativosPostFechaConFormatoInvalido400"/>
+  </testsuite>
+  <testsuite name="03 · Formato y tipos (negativos) / POST usuarioId numérico (400)" id="cd17faf4-d77d-4cae-9261-51e1a858a41d" timestamp="2026-10-21T16:36:00.249Z" tests="3" failures="0" errors="0" time="0.002">
+    <testcase name="[Global] Content-Type es JSON" time="0.002" classname="03FormatoYTiposNegativosPostUsuarioIdNumerico400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.002" classname="03FormatoYTiposNegativosPostUsuarioIdNumerico400"/>
+    <testcase name="HTTP 400" time="0.002" classname="03FormatoYTiposNegativosPostUsuarioIdNumerico400"/>
+  </testsuite>
+  <testsuite name="03 · Formato y tipos (negativos) / POST dirección de 121 caracteres — valor límite (400)" id="8689c006-4d67-4c31-be7b-e35d5ed8230f" timestamp="2026-10-21T16:36:00.249Z" tests="3" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="03FormatoYTiposNegativosPostDireccionDe121CaracteresValorLimite400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="03FormatoYTiposNegativosPostDireccionDe121CaracteresValorLimite400"/>
+    <testcase name="HTTP 400" time="0.004" classname="03FormatoYTiposNegativosPostDireccionDe121CaracteresValorLimite400"/>
+  </testsuite>
+  <testsuite name="03 · Formato y tipos (negativos) / POST dirección de 120 caracteres — valor límite (200)" id="3716d2dc-aee3-4254-8bfc-a3c13c40f80d" timestamp="2026-10-21T16:36:00.249Z" tests="3" failures="0" errors="0" time="0.003">
+    <testcase name="[Global] Content-Type es JSON" time="0.003" classname="03FormatoYTiposNegativosPostDireccionDe120CaracteresValorLimite200"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.003" classname="03FormatoYTiposNegativosPostDireccionDe120CaracteresValorLimite200"/>
+    <testcase name="HTTP 200" time="0.003" classname="03FormatoYTiposNegativosPostDireccionDe120CaracteresValorLimite200"/>
+  </testsuite>
+  <testsuite name="03 · Formato y tipos (negativos) / POST JSON malformado (400, sin stack trace)" id="0b8c6fcb-5635-4310-aa14-5d98778a06a8" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.005">
+    <testcase name="[Global] Content-Type es JSON" time="0.005" classname="03FormatoYTiposNegativosPostJsonMalformado400SinStackTrace"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.005" classname="03FormatoYTiposNegativosPostJsonMalformado400SinStackTrace"/>
+    <testcase name="HTTP 400" time="0.005" classname="03FormatoYTiposNegativosPostJsonMalformado400SinStackTrace"/>
+    <testcase name="No expone detalles internos" time="0.005" classname="03FormatoYTiposNegativosPostJsonMalformado400SinStackTrace"/>
+  </testsuite>
+  <testsuite name="04 · Seguimiento (negativos) / GET seguimiento con id inexistente (404)" id="3bc79aa9-dc17-4b17-98c7-90678bb24ff5" timestamp="2026-10-21T16:36:00.249Z" tests="3" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConIdInexistente404"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConIdInexistente404"/>
+    <testcase name="HTTP 404" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConIdInexistente404"/>
+  </testsuite>
+  <testsuite name="04 · Seguimiento (negativos) / GET seguimiento con payload SQLi (400)" id="c66db968-ac20-49d4-bb6c-36b9cabb1847" timestamp="2026-10-21T16:36:00.249Z" tests="4" failures="0" errors="0" time="0.004">
+    <testcase name="[Global] Content-Type es JSON" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConPayloadSqLi400"/>
+    <testcase name="[Global] Tiempo de respuesta &lt; 2000 ms" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConPayloadSqLi400"/>
+    <testcase name="HTTP 400" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConPayloadSqLi400"/>
+    <testcase name="Error controlado ID_INVALIDO" time="0.004" classname="04SeguimientoNegativosGetSeguimientoConPayloadSqLi400"/>
+  </testsuite>
+</testsuites>

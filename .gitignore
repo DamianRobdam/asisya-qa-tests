@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+playwright-report/
+reports/jmeter/resultados.jtl
+reports/jmeter-estres/resultados.jtl
+*.log.bak
+.env
+jmeter.log

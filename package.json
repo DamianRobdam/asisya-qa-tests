@@ -1,0 +1,36 @@
+{
+  "name": "asisya-qa-tests",
+  "version": "1.0.0",
+  "description": "Prueba técnica Ingeniero QA — Asisya. Automatización Frontend (Playwright) + API (Postman/Newman), debug, carga (JMeter) y seguridad.",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "npm run test:e2e && npm run test:api:ci",
+    "test:e2e": "playwright test",
+    "test:frontend": "playwright test --project=frontend",
+    "test:debug": "playwright test --project=debug-seccion-c",
+    "test:debug:original": "node scripts/with-server.js \"RUN_ORIGINAL=1 ORIGINAL_URL=http://localhost:3000 npx playwright test tests/debug/test-asistencia-falla.spec.ts\"",
+    "test:security": "playwright test --project=seguridad",
+    "postman:build": "node postman/build-collection.js",
+    "test:api": "newman run postman/Asisya-API.postman_collection.json -e postman/local.postman_environment.json -r cli,htmlextra,junit --reporter-htmlextra-export reports/newman/newman-report.html --reporter-htmlextra-title \"Asisya API — Reporte Newman\" --reporter-junit-export reports/junit/newman-results.xml",
+    "test:api:ci": "node scripts/with-server.js \"npm run test:api\"",
+    "test:load": "jmeter -n -t performance/seguimiento-carga.jmx -l reports/jmeter/resultados.jtl -e -o reports/jmeter/dashboard -f && node scripts/check-sla.js",
+    "test:load:ci": "node scripts/with-server.js \"$JMETER_HOME/bin/jmeter -n -t performance/seguimiento-carga.jmx -l reports/jmeter/resultados.jtl -e -o reports/jmeter/dashboard -f && node scripts/check-sla.js\"",
+    "report": "playwright show-report reports/playwright-html"
+  },
+  "keywords": [],
+  "author": "Robinson Damián Calderón Ávila",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "newman": "^6.2.3",
+    "newman-reporter-htmlextra": "^1.23.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
